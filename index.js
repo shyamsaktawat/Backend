@@ -4,24 +4,32 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create and display the form
     const form = document.createElement('form');
     form.innerHTML = `
-        <h2>Internship Application</h2>
-        <div>
-            <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required>
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div>
-            <label for="image">Upload Image:</label>
-            <input type="file" id="image" name="image" accept="image/*" required>
-        </div>
-        <button type="submit">Submit Application</button>
+        
+
+<div class="container">
+<div class="brand-logo"></div>
+<div class="brand-title">Apply NOW</div>
+<div class="inputs">
+<div>
+<label for="fullName">Full Name:</label>
+<input type="text" id="fullName" name="fullName" required>
+</div>
+<div>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+</div>
+<div>
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" required>
+</div>
+<div>
+<label for="image">Upload Screenshot:</label>
+<input type="file" id="image" name="image" accept="image/*" required>
+</div>
+<button type="submit">Submit Application</button>
+</div>
+
+</div>
     `;
 
     app.appendChild(form);
